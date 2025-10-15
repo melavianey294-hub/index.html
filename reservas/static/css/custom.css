@@ -1,0 +1,26 @@
+/* Estilos para gestionar el sidebar expandido/colapsado */
+#wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+
+#sidebar {
+    width: 250px;
+    transition: margin 0.25s ease-out;
+}
+
+#wrapper.toggled #sidebar {
+    margin-left: -250px;
+}
+
+#page-content-wrapper {
+    flex: 1;
+}
+
+/* Opciones extras de estilo que puedes ajustar */
+body {
+    overflow-x: hidden;
+}
+.table-hover tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
